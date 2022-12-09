@@ -122,7 +122,7 @@ for ($index = 0; $index -lt $lunsSplit.Count; $index++)
     {		
         $lun = $lunParts[0];
         Log ("Creating volume for disk " + $lun);
-        $disk = Get-WmiObject Win32_DiskDrive | where InterfaceType -eq SCSI | {($_.SCSILogicalUnit -eq $lun) -and ($_.Partitions -eq 0)} | % { Get-Disk -Number $_.Index } | select -First 1;
+        $disk = Get-WmiObject Win32_DiskDrive | where InterfaceType -eq SCSI | where {($_.SCSILogicalUnit -eq $lun) -and ($_.Partitions -eq 0)} | % { Get-Disk -Number $_.Index } | select -First 1;
         Initialize-Disk -PartitionStyle GPT -UniqueId $disk.UniqueId -ErrorAction SilentlyContinue
 
         for ($partIndex = 0; $partIndex -lt $pathsPartSplit.Count; $partIndex++)
