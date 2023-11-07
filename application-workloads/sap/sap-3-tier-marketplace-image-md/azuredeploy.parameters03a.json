@@ -21,7 +21,7 @@
       "value": "ABAP"
     },
     "osType": {
-      "value": "SLES 12"
+      "value": "SLES 15"
     },
     "dbtype": {
       "value": "HANA"
