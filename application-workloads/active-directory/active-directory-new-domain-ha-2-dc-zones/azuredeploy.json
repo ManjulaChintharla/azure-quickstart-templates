@@ -352,7 +352,8 @@
         "apiVersion": "2020-10-01",
         "name": "UpdateBDCNIC",
         "dependsOn": [
-          "UpdateVNetDNS1"
+          "UpdateVNetDNS1",
+          "[resourceId('Microsoft.Compute/virtualMachines/extensions', variables('vmName')[1], 'PepareBDC')]"
         ],
         "properties": {
           "mode": "Incremental",
