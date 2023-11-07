@@ -29,7 +29,7 @@
         "Windows Server 2012 Datacenter",
         "Windows Server 2012 R2 Datacenter",
         "Windows Server 2016 Datacenter",
-        "SLES 12",
+        "SLES 15",
         "RHEL 7",
         "Oracle Linux 7"
       ],
@@ -155,9 +155,9 @@
         "publisher": "MicrosoftWindowsServer",
         "OSType": "Windows"
       },
-      "SLES 12": {
-        "sku": "12-SP4",
-        "offer": "SLES-SAP",
+      "SLES 15": {
+        "sku": "gen1",
+        "offer": "sles-sap-15-sp5-byos",
         "publisher": "SUSE",
         "OSType": "Linux"
       },
