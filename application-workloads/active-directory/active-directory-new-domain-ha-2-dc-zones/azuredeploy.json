@@ -404,7 +404,7 @@
           },
           "parameters": {
             "extName": {
-              "value": "[concat(variables('vmName')[1], '/PepareBDC')]"
+              "value": "[concat(variables('vmName')[1], '/configureADBDC')]"
             },
             "location": {
               "value": "[parameters('location')]"
