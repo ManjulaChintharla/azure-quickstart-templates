@@ -18,7 +18,7 @@ param stackType string = 'ABAP'
   'Windows Server 2016 Datacenter'
   'Windows Server 2019 Datacenter'
   'Windows Server 2022 Datacenter: Azure Edition - Gen2'
-  'SLES 12'
+  'SLES 15'
   'RHEL 7'
   'Oracle Linux 7'
 ])
@@ -111,9 +111,9 @@ var images = {
     publisher: 'MicrosoftWindowsServer'
     OSType: 'Windows'
   }
-  'SLES 12': {
-    sku: '12-SP4'
-    offer: 'SLES-SAP'
+  'SLES 15': {
+    sku: 'gen1'
+    offer: 'sles-sap-15-sp5-byos'
     publisher: 'SUSE'
     OSType: 'Linux'
   }
